@@ -68,16 +68,16 @@ position: relative;
 
 .btn:hover {
 transform: translateY(-3px);
-box-shadow: 0 10px 20px rgba(0, 0, 0, .2);
+box-shadow: 0 10px 20px rgba(169, 196, 163, 0.2);
 }
 
 .btn:active {
  transform: translateY(-1px);
- box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+ box-shadow: 0 5px 10px rgba(128, 187, 113, 0.2);
 }
 
 .btn-white {
-background-color: rgb(70, 56, 56);
+background-color: rgb(141, 168, 106);
 color: #777;
 }
 
@@ -95,7 +95,7 @@ transition: all .4s ;
 }
 
 .btn-white::after {
- background-color: #4d5d97;
+ background-color: #c6d12d;
 }
 
 .btn:hover::after {
