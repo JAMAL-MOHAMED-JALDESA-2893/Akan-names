@@ -5,26 +5,108 @@
 }
 
 body{
-  margin: 2rem;
-  background-color: darkkhaki;
+  margin: 0.5rem;
+  background-color: #fff;
+  box-shadow: 20px 20px 60px #d9d9d9,
+  -20px -20px 60px #ffffff;;
+  font-family: 'Tourney', cursive;
 }
 
 /*banner section*/
 
 .main-banner-section {
-  height: 90vh;
+  height: 95vh;
+  width: 100%;
   position: relative;
   background-image: url("./img/bg-1.png");
   background-size: cover;
   padding: 90px 0px 100px;
-  background-position:top center ;
+  background-position:center right ;
+  box-shadow: 20px 20px 60px #d9d9d9,
+  -20px -20px 60px #ffffff;;
+}
 
+
+.heading-primary-main {
+  display: block;
+  font-size: 60px;
+  font-weight: 400;
+  letter-spacing: 35px;
+  animation: moveInRight 1s ease-out;
+  
+}
+
+
+@keyframes moveInRight {
+0% {
+ opacity: 0;
+ transform: translateX(100%);
+}
+
+80% {
+ transform: translateX(-10px);
+}
+
+100% {
+ opacity: 1;
+ transform: translate(0);
+}
+}
+
+
+
+.btn:link,
+.btn:visited {
+text-transform: uppercase;
+text-decoration: none;
+padding: 15px;
+display: inline-block;
+border-radius: 100px;
+transition: all .2s;
+position: relative;
+}
+
+.btn:hover {
+transform: translateY(-3px);
+box-shadow: 0 10px 20px rgba(0, 0, 0, .2);
+}
+
+.btn:active {
+ transform: translateY(-1px);
+ box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+}
+
+.btn-white {
+background-color: rgb(70, 56, 56);
+color: #777;
+}
+
+.btn::after {
+content: "";
+display: inline-block;
+height: 100%;
+width: 100%;
+position: absolute;
+top: 0;
+left: 0;
+border-radius: 100px;
+z-index: -1;
+transition: all .4s ;
+}
+
+.btn-white::after {
+ background-color: #4d5d97;
+}
+
+.btn:hover::after {
+transform: scaleX(1.4) scaleY(1.6);
+opacity: 0;
 }
 
 .main-banner-section .text p {
   color: #ecedf1;
   text-align: justify;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 p, .text {
@@ -35,6 +117,8 @@ p, .text {
 
   animation: moveInRight 1.3s ease-out;
 }
+
+
 
 
 /*banner section*/
