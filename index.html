@@ -58,18 +58,18 @@
           <br />
           <br />
           <!--SUBMIT FORM FOR KNOWING YOUR AKAN NAME.-->
-          <form>
+          <form id="forms" onsubmit="return false">
             <div>
               <div>
-                <label>Year you were born</label>
+                <label>Date you were born</label>
                 <input
                   type="number"
                   class="form-control"
-                  id="year"
-                  placeholder="Eg: 2000."
+                  id="day"
+                  placeholder="Eg: 12."
                   required
-                  min="1980"
-                  max="2019"
+                  min="1"
+                  max="31"
                 />
                 <label>Month you were born</label>
                 <input
@@ -82,15 +82,15 @@
                   max="12"
                 />
 
-                <label>Date you were born</label>
+                <label>Year you were born</label>
                 <input
                   type="number"
                   class="form-control"
-                  id="day"
-                  placeholder="Eg: 06 "
+                  id="year"
+                  placeholder="Eg: 2006 "
                   required
-                  min="1"
-                  max="31"
+                  min="1980"
+                  max="2021"
                 />
               </div>
               <br />
@@ -120,7 +120,7 @@
   </section>
 
   <footer>
-    
+
   </footer>
 
   <script
