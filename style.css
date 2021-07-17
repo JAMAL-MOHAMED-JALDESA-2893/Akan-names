@@ -5,7 +5,7 @@
 }
 
 body{
-  margin: 1rem;
+  margin: 2rem;
   background-color: darkkhaki;
 }
 
@@ -16,13 +16,13 @@ body{
   position: relative;
   background-image: url("./img/bg-1.png");
   background-size: cover;
-  padding: 50px;
+  padding: 90px 0px 100px;
   background-position:top center ;
 
 }
 
 .main-banner-section .text p {
-  color: #162044;
+  color: #ecedf1;
   text-align: justify;
   font-size: 20px;
 }
