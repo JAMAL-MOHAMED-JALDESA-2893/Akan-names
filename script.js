@@ -2,6 +2,7 @@
 
 const akanNameGenerator = function () {
   //Saved days of the week in an Array.
+
   const weekDays = [
     "Sunday",
     "Monday",
@@ -12,7 +13,7 @@ const akanNameGenerator = function () {
     "Saturday",
   ];
 
-  //Male Akan Names
+  // Male Akan Names
 
   const maleAkanNames = [
     "Kwasi",
@@ -23,4 +24,18 @@ const akanNameGenerator = function () {
     "Kofi",
     "Kwame",
   ];
+
+  // Female akan Names
+
+  const femaleAkanNames = [
+    "akosua",
+    "Adwoa",
+    "Abenaa",
+    "Akua",
+    "Yaa",
+    "Afua",
+    "Ama",
+  ];
+
+  
 };
