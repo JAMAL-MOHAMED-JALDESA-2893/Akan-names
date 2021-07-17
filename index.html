@@ -48,12 +48,38 @@
           <br />
 
           <h2>know your Akan name below </h2>
+          <br>
+          <br>
+          <form>
+            <div>
+                <div>
+                      
+                  
+                    <label>Year you were born</label>
+                    <input type="number" class="form-control" id="year" placeholder="Enter the year." required
+                        min="1980" max="2019" >
+                    <label>Month you were born</label>
+                    <input type="number" class="form-control" id="month" placeholder="Enter the month" required min="1"
+                        max="12">
 
-          <div class="btn-box">
-            <a href="#contact" class="btn btn-white btn-animated"
-              >know your akan name</a
-            >
-          </div>
+                    <label>Day you were born</label>
+                    <input type="number" class="form-control" id="day" placeholder="Enter the day" required min="1"
+                        max="31">
+                </div>
+                <div class="ggg">
+                    <label>select your gender</label> <br>
+                    <input type="radio" name="gender" id="male" value="male" > Male
+                    <input type="radio" name="gender" id="female" value="female"> Female
+                </div>
+            </div>
+         
+            
+            <a onclick="submission()" class="btn btn-white btn-animated">Submit</a>
+            
+            <button type="reset" class="btn btn-white btn-animated">Reset</button>
+            
+        </form>
+          
 
           <br />
         </div>
