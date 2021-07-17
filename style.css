@@ -94,8 +94,6 @@ z-index: -1;
 transition: all .4s ;
 }
 
-.
-
 .btn:hover::after {
 transform: scaleX(1.4) scaleY(1.6);
 opacity: 0;
@@ -109,6 +107,7 @@ opacity: 0;
 
 p, .text {
   text-align: justify;
+  animation: moveInRight 1s ease-out;
 }
 
 .sec-title.light .title, .sec-title.light h2 {
