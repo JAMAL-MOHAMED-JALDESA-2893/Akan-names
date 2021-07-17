@@ -4,3 +4,37 @@
   box-sizing: border-box;
 }
 
+body{
+  margin: 1rem;
+  background-color: darkkhaki;
+}
+
+/*banner section*/
+
+.main-banner-section {
+  height: 90vh;
+  position: relative;
+  background-image: url("./img/bg-1.png");
+  background-size: cover;
+  padding: 50px;
+  background-position:top center ;
+
+}
+
+.main-banner-section .text p {
+  color: #162044;
+  text-align: justify;
+  font-size: 20px;
+}
+
+p, .text {
+  text-align: justify;
+}
+
+.sec-title.light .title, .sec-title.light h2 {
+
+  animation: moveInRight 1.3s ease-out;
+}
+
+
+/*banner section*/
