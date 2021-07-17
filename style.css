@@ -102,7 +102,8 @@ opacity: 0;
 .main-banner-section .text p {
   color: rgb(232, 240, 240);
   text-align: justify;
-  font-size: 18px;
+  font-size: 24px;
+  font-family: 'Special Elite', cursive;
 }
 
 p, .text {
@@ -117,8 +118,13 @@ p, .text {
 
 label{
   color: #fff;
+  font-family: 'Special Elite', cursive;
 }
 
+input{
+  color: rgb(146, 134, 134);
+  font-family: 'Special Elite', cursive;
+}
 
 
 /*banner section*/
