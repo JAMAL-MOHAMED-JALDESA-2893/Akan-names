@@ -37,5 +37,22 @@ const akanNameGenerator = function () {
     "Ama",
   ];
 
+  // Saving The inputs in variables
   
+  const dateOfBirth = parseInt(
+    document.getElementById('date').value
+  );
+
+  // variable for holding month of birth.
+
+  const monthOfBirth = parseInt(
+    document.getElementById('month').value
+  );
+
+  // Variable For holding Year of Birth.
+
+  const yearOfBirth = parseInt(
+    document.getElementById('year').value
+  );
+
 };
