@@ -75,7 +75,7 @@ const akanNameGenerator = function () {
          // VALIDATION OF THE FORM INPUT VALUES BY  if...else...statements.
 
  
-         if (monthOfBirth < 1 || monthOfBirth > 12 ) // THIS CONDITION VALIDATES MONTH INPUT VALUES
+      if (monthOfBirth < 1 || monthOfBirth > 12 ) // THIS CONDITION VALIDATES MONTH INPUT VALUES
              {
             swal(`WRONG MONTH INPUT : PLEASE ENTER VALID
                 Your input value exceeded the total number of months in a year`);

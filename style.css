@@ -126,6 +126,16 @@ input{
   font-family: 'Special Elite', cursive;
 }
 
+.copyright {
+  color: #aaa;
+  font-size: 1rem;
+  letter-spacing: 0.2rem;
+  font-weight: 300;
+  text-align: center;
+padding-top: 0;
+}
+
+
 
 /*End of  banner section*/
 
