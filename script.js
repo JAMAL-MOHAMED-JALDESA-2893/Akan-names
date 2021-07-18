@@ -72,38 +72,37 @@ const akanNameGenerator = function () {
 
 
  
+         // VALIDATION OF THE FORM INPUT VALUES BY  if...else...statements.
 
+ 
+         if (monthOfBirth < 1 || monthOfBirth > 12 ) // THIS CONDITION VALIDATES MONTH INPUT VALUES
+             {
+            swal(`WRONG MONTH INPUT : PLEASE ENTER VALID
+                Your input value exceeded the total number of months in a year`);
+           } 
 
-  // Validating the form inputs using control structure if...else...statements.
+      else if (dateOfBirth < 1 || dateOfBirth > 31  && monthOfBirth < 1 || monthOfBirth > 12 ) // THIS CONDITION VALIDATES DATES AND MONTHS THAT EXCEED 31 AND 12 RESPECTIVELY
+          {
+            swal(`WRONG DATE ENTERED : PLEASE ENTER VALID DATE
+                 WRONG MONTH ENTERED : PLEASE ENTER VALID MONTH `)
+          }
+              
+       else if ((monthOfBirth == 2 && dateOfBirth > 29)) // THIS CONDITION VALIDATES FEB DAYS THAT EXCEED 29 DAYS
+       
+           {
+               swal(`THE DATE "FEBRUARY" NUMBER OF DAYS`)
+           }
 
-
-
-  // if (month < 1 || month > 12 || (month == 2 && date > 29)) {
-  //   return (document.getElementById("alert2").innerHTML =
-  //     "Invalid  Month ,Please Try Again");
-  // } else if (date < 1 || date > 31) {
-  //   return (document.getElementById("alert2").innerHTML =
-  //     "Invalid Date ,Please Try Again");
-  // } else if (year === NaN || year < 1900 || year > 2019) {
-  //   document.getElementById("alert2").innerHTML =
-  //     "Invalid year please try Again";
-  // }
-
-
-    
-
-     if (dateOfBirth < 1 || dateOfBirth > 31  ) {   //this condition validates date inputs only
-          swal(`Wrong date entered : please enter valid date`)
-          return;
-     } 
-     else if (monthOfBirth < 1 || monthOfBirth > 12 || (monthOfBirth == 2 && dateOfBirth > 29) ) {
-        swal("wrong month input : please enter valid month");
-        return;
-     } 
-     else if (dateOfBirth < 1 || dateOfBirth > 31  && monthOfBirth < 1 || monthOfBirth > 12 ) {
-        swal(`Wrong date entered : please enter valid date
-        wrong month entered : please enter valid month`)
-     };
+      else  if (dateOfBirth < 1 || dateOfBirth > 31  )// THIS CONDITION VALIDATES DATES INPUT VALUES
+           {   
+              swal(`WRONG DATE ENTERED : PLEASE ENTER VALID DATE`)
+          } 
+     
+       else if (yearOfBirth = NaN || yearOfBirth < 1900)   // THIS CONDITION VALIDATES YEAR INPUT VALUES
+            {
+              swal(`WRONG YEAR ENTERED : PLEASE ENTER VALID YEAR `)
+            }   
+     
 
 
 
