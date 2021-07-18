@@ -55,4 +55,17 @@ const akanNameGenerator = function () {
     document.getElementById('year').value
   );
 
+  //Varriable for holding  gender selection.
+
+  const gender = document.getElementById('gender').value;
+
+  // variable to hold the dateOfBirt :aquired through new Date() method and the values of the form inputs.
+
+  const birthDate = new Date(`${yearOfBirth}/${monthOfBirth}/${dateOfBirth}`);
+
+  // variable For holding dayOfWeek of date Of Birth :aquired through subjecting the birthdate variable to a getDay() method. 
+
+  const dayOfWeek = birthDate.getDay();
+
+  
 };
