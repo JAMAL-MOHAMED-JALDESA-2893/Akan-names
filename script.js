@@ -77,30 +77,24 @@ const akanNameGenerator = function () {
  
       if (monthOfBirth < 1 || monthOfBirth > 12 ) // THIS CONDITION VALIDATES MONTH INPUT VALUES
              {
-            swal(`WRONG MONTH INPUT : PLEASE ENTER VALID
-                Your input value exceeded the total number of months in a year`);
+            swal ( "WRONG MONTH INPUT : PLEASE ENTER VALID MONTH" ,  "Your input value exceeded the total number of months in a year" ,  "error" )
            } 
 
-      else if (dateOfBirth < 1 || dateOfBirth > 31  && monthOfBirth < 1 || monthOfBirth > 12 ) // THIS CONDITION VALIDATES DATES AND MONTHS THAT EXCEED 31 AND 12 RESPECTIVELY
-          {
-            swal(`WRONG DATE ENTERED : PLEASE ENTER VALID DATE
-                 WRONG MONTH ENTERED : PLEASE ENTER VALID MONTH `)
-          }
               
        else if ((monthOfBirth == 2 && dateOfBirth > 29)) // THIS CONDITION VALIDATES FEB DAYS THAT EXCEED 29 DAYS
        
            {
-               swal(`THE DATE "FEBRUARY" NUMBER OF DAYS`)
+              swal ( "WRONG DATE INPUT FOR FEBRUARY" ,  "The date exceeds february number of days" ,  "error" )
            }
 
       else  if (dateOfBirth < 1 || dateOfBirth > 31  )// THIS CONDITION VALIDATES DATES INPUT VALUES
            {   
-              swal(`WRONG DATE ENTERED : PLEASE ENTER VALID DATE`)
+              swal ( "WRONG DATE ENTERED" ,  "Please Enter Valid " ,  "error" )
           } 
      
-       else if (yearOfBirth = NaN || yearOfBirth < 1900)   // THIS CONDITION VALIDATES YEAR INPUT VALUES
+       else if (yearOfBirth === NaN || yearOfBirth < 1900)   // THIS CONDITION VALIDATES YEAR INPUT VALUES
             {
-              swal(`WRONG YEAR ENTERED : PLEASE ENTER VALID YEAR `)
+              swal ( "WRONG YEAR ENTERED" ,  "Please Enter Valid Year" ,  "error" )
             }   
      
 
