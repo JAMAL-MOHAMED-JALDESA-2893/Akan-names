@@ -8,7 +8,7 @@
 **AKAN NAMES** is a website that generates the Ghananian Akan-names by use of birthday date,the site calculates the day of the week you were born and then depending on their gender outputs their Akan Name.
 
 ## Live Page 
-https://
+link: https://jamal-mohamed-jaldesa-2893.github.io/Akan-names/
 
 ## Installation / Setup instruction
 * Open Terminal {Ctrl+Alt+T}

@@ -64,6 +64,8 @@ const akanNameGenerator = function () {
 
  const weekDay = dateOfBirth.getDay();
 
+// form validation
+
 
 
  
