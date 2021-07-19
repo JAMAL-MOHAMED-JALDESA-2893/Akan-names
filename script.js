@@ -64,10 +64,35 @@ const akanNameGenerator = function () {
 
  const weekDay = dateOfBirth.getDay();
 
-// form validation
+// form validation for the form inputs.
+
+    if (yearborn === NaN || yearborn < 1900 || yearborn > 2021)
+            {
+              return swal ( "WRONG YEAR INPUT !" ,  "PLEASE ENTER VALID NUMBER OF THE YEAR" ,  "error" );
+            }
 
 
+   else if (birtmonth < 1 || birtmonth > 12 )
+             {
+                return swal ( "WRONG MONTH INPUT !" ,  "ENTER VALID MONTH" ,  "error" );
+             } 
 
+   else if  (birtmonth == 2 && dayDate > 29) 
+        {
+          return swal ( "WRONG MONTH INPUT !" ,  "FEBRUARY SHOULD NOT BE MORE THAN 29 DAYS" ,  "error" );
+        } 
+
+      else if (dayDate < 1 || dayDate > 31)  
+        {
+          return swal ( "WRONG DATE INPUT !" ,  "PLEASE ENTER VALID NUMBER OF DAYS" ,  "error" );
+         }
+
+       if (year === NaN || year < 1900 || year > 2021)
+           {
+            return swal ( "WRONG YEAR INPUT !" ,  "PLEASE ENTER VALID NUMBER OF THE YEAR" ,  "error" );
+          }
+
+          //// CALCULATING THE AKAN NAMES USING if .....else  if
  
   if (weekDay === 0 && gender === "male") 
   {
