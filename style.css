@@ -117,13 +117,23 @@ p, .text {
 }
 
 label{
-  color: #fff;
+  color: rgb(238, 226, 226);
   font-family: 'Special Elite', cursive;
+  font-size: 20px;
 }
 
-input{
+.field {
   color: rgb(146, 134, 134);
   font-family: 'Special Elite', cursive;
+  width: 35vw;
+ height: 50px;
+ border-radius: 15px;
+ outline: none;
+}
+
+ .radio {
+    width:  35px;
+    color: #ffffff;
 }
 
 .copyright {
@@ -135,7 +145,10 @@ input{
 padding-top: 0;
 }
 
-
+input{
+  font-size: 28px;
+  text-align: center;
+}
 
 /*End of  banner section*/
 

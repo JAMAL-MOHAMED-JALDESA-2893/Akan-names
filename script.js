@@ -1,24 +1,10 @@
-
-
-
-// Function that generates the akan names according to days of the week
+//// Function that generates the akan names according to days of the week
 
 const akanNameGenerator = function () {
-  //Saved days of the week in an Array.
 
-  const weekDays = [
-    "Sunday",
-    "Monday",
-    "Tuesday",
-    "Wednesday",
-    "Thursday",
-    "Friday",
-    "Saturday",
-  ];
+// Male Akan Names
 
-  // Male Akan Names
-
-  const maleAkanNames = [
+ const mandumeAkans = [
     "Kwasi",
     "Kwadwo",
     "Kwabena",
@@ -28,83 +14,150 @@ const akanNameGenerator = function () {
     "Kwame",
   ];
 
-  // Female akan Names
+// Female akan Names
 
-  const femaleAkanNames = [
-    "akosua",
-    "Adwoa",
-    "Abenaa",
-    "Akua",
-    "Yaa",
-    "Afua",
-    "Ama",
+ const slayQueenAkans = [
+    "Akosua", 
+    "Adwoa", 
+    "Abenaa", 
+    "Akua", 
+    "Yaa", 
+    "Afua", 
+    "Ama"];
+
+     //days of the week
+
+ const daysOfTheWeek = [
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
   ];
 
-  // Saving The inputs in variables
-  
-  const dateOfBirth = parseInt(
-    document.getElementById('date').value
+ // date value variable
+
+ const dayDate = parseInt(
+    document.getElementById("Form").elements.namedItem("date").value
   );
 
-  // variable for holding month of birth.
+  // month value variable
 
-  const monthOfBirth = parseInt(
-    document.getElementById('month').value
+ const birtmonth = parseInt(
+    document.getElementById("Form").elements.namedItem("month").value
   );
 
-  // Variable For holding Year of Birth.
+  // year value variable
 
-  const yearOfBirth = parseInt(
-    document.getElementById('year').value
+ const yearborn = parseInt(
+    document.getElementById("Form").elements.namedItem("year").value
   );
 
-  //Varriable for holding  gender selection.
+  // gender value variable
+ const gender = document.getElementById("Form").elements.namedItem("gender").value;
 
-  const gender = document.getElementById('gender').value;
+ 
+ const dateOfBirth = new Date(yearborn + "/" + birtmonth + "/" + dayDate);
 
-  // variable to hold the dateOfBirt :aquired through new Date() method and the values of the form inputs.
 
-  const birthDate = new Date(`${yearOfBirth}/${monthOfBirth}/${dateOfBirth}`);
+ const weekDay = dateOfBirth.getDay();
 
-  // variable For holding dayOfWeek of date Of Birth :aquired through subjecting the birthdate variable to a getDay() method. 
-
-  const dayOfWeek = birthDate.getDay();
 
 
  
-         // VALIDATION OF THE FORM INPUT VALUES BY  if...else...statements.
+  if (weekDay === 0 && gender === "male") 
+  {
+    return swal({title:`YOU WERE BORN ON :${daysOfTheWeek[weekDay]} 
+                       YOUR AKAN NAME IS....
+                        : ${mandumeAkans[weekDay]}`});
+  } 
+  else if (weekDay === 1 && gender === "male") 
+  {
+    return swal({title:`YOU WERE BORN ON :${daysOfTheWeek[weekDay]} 
+                        YOUR AKAN NAME IS....
+                            : ${mandumeAkans[weekDay]}`});
+  } 
+  else if (weekDay === 2 && gender === "male")
+   {
+    return swal({title:`YOU WERE BORN ON :${daysOfTheWeek[weekDay]} 
+                       YOUR AKAN NAME IS....
+                                            : ${mandumeAkans[weekDay]}`});
+  } 
+  else if (weekDay === 3 && gender === "male") 
+  {
+    return swal({title:`YOU WERE BORN ON :${daysOfTheWeek[weekDay]} 
+                        YOUR AKAN NAME IS....
+                        : ${mandumeAkans[weekDay]}`});
+    
+  } 
+  else if (weekDay === 4 && gender === "male")
+   {
+    return swal({title:`YOU WERE BORN ON :${daysOfTheWeek[weekDay]} 
+                        YOUR AKAN NAME IS....
+                                         : ${mandumeAkans[weekDay]}`});
+  } 
+  else if (weekDay === 5 && gender === "male")
+   {
+  return swal({title:`YOU WERE BORN ON :${daysOfTheWeek[weekDay]} 
+  Y                  OUR AKAN NAME IS....
+                                         : ${mandumeAkans[weekDay]}`});
+  } 
+  else if (weekDay === 6 && gender === "male") 
+  {
+    return swal({title:`YOU WERE BORN ON :${daysOfTheWeek[weekDay]} 
+                        YOUR AKAN NAME IS....
+                                            : ${mandumeAkans[weekDay]}`});
+  }
 
- 
-      if (monthOfBirth < 1 || monthOfBirth > 12 ) // THIS CONDITION VALIDATES MONTH INPUT VALUES
-             {
-            swal ( "WRONG MONTH INPUT : PLEASE ENTER VALID MONTH" ,  "Your input value exceeded the total number of months in a year" ,  "error" )
-           } 
+  if (weekDay === 0 && gender === "female") 
+  {
+    return swal({title:`YOU WERE BORN ON :${daysOfTheWeek[weekDay]} 
+                       YOUR AKAN NAME IS....
+                                            : ${slayQueenAkans[weekDay]}`});
+  } 
+  else if (weekDay === 1 && gender === "female")
+   {
+    return swal({title:`YOU WERE BORN ON :${daysOfTheWeek[weekDay]} 
+                       YOUR AKAN NAME IS....
+                                            : ${slayQueenAkans[weekDay]}`});
+  } 
+  else if (weekDay === 2 && gender === "female") 
+  {
+    return swal({title:`YOU WERE BORN ON :${daysOfTheWeek[weekDay]} 
+    Y                   YOUR AKAN NAME IS....
+                                           : ${slayQueenAkans[weekDay]}`});
+  } 
+  else if (weekDay === 3 && gender === "female") 
+  {
+    return swal({title:`YOU WERE BORN ON :${daysOfTheWeek[weekDay]} 
+                       YOUR AKAN NAME IS....
+                                            : ${slayQueenAkans[weekDay]}`});
+  } 
+  else if (weekDay === 4 && gender === "female")
+   {
+    return swal({title:`YOU WERE BORN ON :${daysOfTheWeek[weekDay]} 
+                       YOUR AKAN NAME IS....
+                                            : ${slayQueenAkans[weekDay]}`});
+  } 
+  else if (weekDay === 5 && gender === "female")
+   {
+    return swal({title:`YOU WERE BORN ON :${daysOfTheWeek[weekDay]} 
+                       YOUR AKAN NAME IS....
+                                            : ${slayQueenAkans[weekDay]}`});
+  } 
+  else if (weekDay === 6 && gender === "female") 
+  {
+    return swal({title:`YOU WERE BORN ON :${daysOfTheWeek[weekDay]} 
+                       YOUR AKAN NAME IS....
+                                            : ${slayQueenAkans[weekDay]}`});
+  }
 
-              
-       else if ((monthOfBirth == 2 && dateOfBirth > 29)) // THIS CONDITION VALIDATES FEB DAYS THAT EXCEED 29 DAYS
-       
-           {
-              swal ( "WRONG DATE INPUT FOR FEBRUARY" ,  "The date exceeds february number of days" ,  "error" )
-           }
-
-      else  if (dateOfBirth < 1 || dateOfBirth > 31  )// THIS CONDITION VALIDATES DATES INPUT VALUES
-           {   
-              swal ( "WRONG DATE ENTERED" ,  "Please Enter Valid " ,  "error" )
-          } 
-     
-       else if (yearOfBirth === NaN || yearOfBirth < 1900)   // THIS CONDITION VALIDATES YEAR INPUT VALUES
-            {
-              swal ( "WRONG YEAR ENTERED" ,  "Please Enter Valid Year" ,  "error" )
-            }   
-     
-
-
-
-
-
-
-
-
-
-  
 };
+
+
+
+
+
+

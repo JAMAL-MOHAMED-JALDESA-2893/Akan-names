@@ -56,67 +56,59 @@
 
           <h2>know your Akan name below</h2>
           <br />
+
+          
           <br />
-          <!--SUBMIT FORM FOR KNOWING YOUR AKAN NAME.-->
-          <form id="forms" onsubmit="return noBlankSpaces()">
-            <div>
-              <div>
-                <label>Date you were born</label>
-                <input
-                  type="number"
-                  class="form-control"
-                  id="date"
-                  placeholder="Eg: 12."
-                  min="1"
-                  max="31"
-                  required
-                />
-                <label>Month you were born</label>
-                <input
-                  type="number"
-                  class="form-control"
-                  id="month"
-                  placeholder="Eg: 05 for May"
-                  required
-                  min="1"
-                  max="12"
-                />
 
-                <label>Year you were born</label>
-                <input
-                  type="number"
-                  class="form-control"
-                  id="year"
-                  placeholder="Eg: 2006 "
-                  min="1900"
-                  max="2021"
-                  required
-                />
-              </div>
-              <br />
-              <div>
-                <label>select your gender</label> <br />
-                <input type="radio" name="gender" id="gender" value="male" />
-                Male
-                <input type="radio" name="gender" id="gender" value="female" />
-                Female
-              </div>
-            </div>
-            <br />
-            <br />
-
-            <button
-              type="submit"
-              onclick="akanNameGenerator()"
-              class="btn btn-white btn-animated"
-            >
-              Get akan name
-            </button>
-
-            <button type="reset" class="btn btn-white btn-animated">
-              Reset
-            </button>
-          </form>
+          <div>
+            <form id="Form" onsubmit="return false">
+             <label>Date of birth</label>
+             <br>
+              <input
+              class="field"
+                type="number"
+                name="day"
+                placeholder="Eg: 12."
+                id="date"
+                min="1"
+                max="30"
+                required
+              /><br />
+             <label>Month of birth</label> 
+              <br>
+              <input
+                class="field"
+                type="number"
+                name="Month of birth"
+                id="month"
+                min="1"
+                max="12"
+                required
+              /><br />
+             <label>Year of birth</label> 
+              <br>
+              <input 
+                class="field"
+                type="number"
+                name="Year of birth"
+                id="year"
+                min="1900"
+                max="2021"
+                required
+              /><br />
+              <br>
+              <input class="radio" type="radio" name="gender" value="male" />Male
+              <br>
+              <br>
+              <input class="radio" type="radio" name="gender" value="female" />Female
+              <br>
+              <br>
+              <button class="primary btn" onclick="akanNameGenerator ()">Submit</button>
+              <button type="reset" class="btn btn-white btn-animated">
+                Reset
+              </button>
+            </form>
+          </div>
 
           <br />
         </div>
